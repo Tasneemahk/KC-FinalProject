@@ -2,4 +2,13 @@
     <string name="app_name">We Share</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="catStringArray">
+        <item>Cat 1</item>
+        <item>Cat 2</item>
+        <item>Cat 3</item>
+        <item>Cat 4</item>
+        <item>Cat 5</item>
+        <item>Cat 6</item>
+    </string-array>
+
 </resources>

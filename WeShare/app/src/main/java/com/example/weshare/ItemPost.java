@@ -7,19 +7,17 @@ public class ItemPost implements Serializable {
     private String postCat;
     private String ItemNamePost;
     private String ItemDescriptionPost;
-    private String fromTimePost;
-    private String toTimePost;
+    private String availablePost;
     private String ItemLocationPost;
     private String contactItemPost;
 
 
-    public ItemPost(int itemPicPost, String postCat, String itemNamePost, String itemDescriptionPost, String fromTimePost, String toTimePost, String itemLocationPost, String contactItemPost) {
+    public ItemPost(int itemPicPost, String postCat, String itemNamePost, String itemDescriptionPost, String availablePost, String itemLocationPost, String contactItemPost) {
         ItemPicPost = itemPicPost;
         this.postCat = postCat;
         ItemNamePost = itemNamePost;
         ItemDescriptionPost = itemDescriptionPost;
-        this.fromTimePost = fromTimePost;
-        this.toTimePost = toTimePost;
+        this.availablePost = availablePost;
         ItemLocationPost = itemLocationPost;
         this.contactItemPost = contactItemPost;
     }
@@ -58,20 +56,13 @@ public class ItemPost implements Serializable {
     }
 
     public String getFromTimePost() {
-        return fromTimePost;
+        return availablePost;
     }
 
     public void setFromTimePost(String fromTimePost) {
-        this.fromTimePost = fromTimePost;
+        this.availablePost = fromTimePost;
     }
 
-    public String getToTimePost() {
-        return toTimePost;
-    }
-
-    public void setToTimePost(String toTimePost) {
-        this.toTimePost = toTimePost;
-    }
 
     public String getItemLocationPost() {
         return ItemLocationPost;

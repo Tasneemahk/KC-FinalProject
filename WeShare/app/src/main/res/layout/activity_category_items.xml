@@ -13,9 +13,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/navigation"
-        android:id="@+id/frame_layout">
-
-    </FrameLayout>
+        android:id="@+id/frame_layout"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"

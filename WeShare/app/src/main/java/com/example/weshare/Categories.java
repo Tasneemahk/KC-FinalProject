@@ -29,3 +29,4 @@ public class Categories implements Serializable {
         this.catLabel = catLabel;
     }
 }
+

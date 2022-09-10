@@ -17,13 +17,14 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     ArrayList<Categories> categories = new ArrayList<>();
+    int c = 0;
+    int c2= 0;
     ArrayList<Categories2> categories2s = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         Toolbar toolBar = findViewById(R.id.toolBar);
         setSupportActionBar(toolBar);
@@ -57,13 +58,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent plane1= new Intent(MainActivity.this,CategoryItems.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("list1",categories);
+                bundle.putSerializable("list2",categories2s);
+                plane1.putExtra("b",bundle);
                 startActivity(plane1);
             }
         });
         frstCatList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
                 Intent plane2= new Intent(MainActivity.this,CategoryItems.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("list1",categories);
+                bundle.putSerializable("list2",categories2s);
+                plane2.putExtra("b",bundle);
                 startActivity(plane2);
             }
         });

@@ -30,10 +30,12 @@ public class Adapter1 extends ArrayAdapter<Categories> {
         TextView title = view.findViewById(R.id.categoryL);
         ImageView IMG = view.findViewById(R.id.categoryIMG);
 
+
         title.setText(currentCat.getCatLabel());
         IMG.setImageResource(currentCat.getCatIMG());
 
         return view;
 
     }
+
 }
